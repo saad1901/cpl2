@@ -6,36 +6,36 @@ b. Insert an image and create a link such that clicking on
 image takes user to other page.
 c. Also apply font styling like italics, underline, and two other
 fonts to words you find appropriate. Also use header tags.
-
+-------------------------------------------------------------------------------------------------
 Design a web page using for a Technical Festival, responsive
 with media queries
-
+-------------------------------------------------------------------------------------------------
 
 Create a web pages of a e-commerce website using Bootstrap
 framework.
 1.Index page
 2.Login page with validations.
-
+-------------------------------------------------------------------------------------------------
 Create a web page for a Game
-
+-------------------------------------------------------------------------------------------------
 Install node js and create a server using express js and create a
 weather application using weather api from rapid api.
-
+-------------------------------------------------------------------------------------------------
 Create a news webpage using html, css, bootstrap with node js
 and express js at backend with news api
-
+-------------------------------------------------------------------------------------------------
 
 Create keeper app using react js using react components
-
+-------------------------------------------------------------------------------------------------
 
 Create a calculator using react.js
-
+-------------------------------------------------------------------------------------------------
 Upgrade keeper app using react props, react devtools,
 mapping components, etc
-
+-------------------------------------------------------------------------------------------------
 Design and develop MongoDB Queries using CRUD
 operations
-
+-------------------------------------------------------------------------------------------------
 Build Mini website and deploy it
 Example : Design a website for the Tourism Sites of a given
 City. There should be at least 10 web-pages present in the
