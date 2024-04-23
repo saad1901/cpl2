@@ -1,0 +1,64 @@
+server.js------------
+// 1)Set up Node.js and Express.js backend:First, make sure you have Node.js installed on your system. Then, follow these steps:
+// Create a new directory for your project.
+// Initialize a new Node.js project by running npm init -y.
+// Install Express.js by running npm install express.
+// Create a new file called server.js and set up your Express server. Here's a basic example:
+
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+// Integrate HTML, CSS, and Bootstrap for the frontend:
+// Create a new directory called public in your project.
+// Inside the public directory, create HTML and CSS files for your webpage. You can use Bootstrap to style your page. Here's a basic HTML structure:
+
+
+
+-----------public/index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <!-- Navbar goes here -->
+  </header>
+
+  <main class="container">
+    <h1>Latest News</h1>
+    <!-- News articles will be displayed here -->
+  </main>
+
+  <footer>
+    <!-- Footer goes here -->
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- 3)Fetch news data from a News API:
+Sign up for a News API service. One popular option is the News API.
+Generate an API key, which you'll use to make requests to the News API.
+Use a library like Axios to make HTTP requests to the News API from your Express server.
+Handle the incoming news data and send it to the frontend to be displayed.
+4)Integrate the backend with the frontend:
+Set up routes in your Express server to handle requests for fetching news data.
+Use Axios or another HTTP client library to make requests to your backend server from the frontend.
+Update the HTML dynamically with the fetched news data.
+5)Run your application:
+Start your Express server by running node server.js.
+Open your web browser and navigate to http://localhost:3000 to view your news webpage. -->

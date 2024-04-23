@@ -1,0 +1,102 @@
+app.js-------------------------
+// 1)Create a new React app using Create React App by running the following command in your terminal:npx create-react-app calculator-app
+// 2)Navigate into the newly created directory:cd calculator-app
+// 3)Replace the contents of the src/App.js file with the following code:
+// 4)Replace the contents of the src/App.css file with the following CSS:
+
+import React, { useState } from 'react';
+import './App.css';
+
+function App() {
+  const [display, setDisplay] = useState('');
+  const [result, setResult] = useState('');
+
+  const handleButtonClick = (value) => {
+    if (value === '=') {
+      try {
+        const evaluatedResult = eval(display);
+        setResult(evaluatedResult);
+      } catch (error) {
+        setResult('Error');
+      }
+    } else if (value === 'C') {
+      setDisplay('');
+      setResult('');
+    } else {
+      setDisplay(display + value);
+    }
+  };
+
+  return (
+    <div className="App">
+      <div className="calculator">
+        <input type="text" value={display} disabled />
+        <input type="text" value={result} disabled />
+        <div className="buttons">
+          <button onClick={() => handleButtonClick('7')}>7</button>
+          <button onClick={() => handleButtonClick('8')}>8</button>
+          <button onClick={() => handleButtonClick('9')}>9</button>
+          <button onClick={() => handleButtonClick('/')}>/</button>
+          <button onClick={() => handleButtonClick('4')}>4</button>
+          <button onClick={() => handleButtonClick('5')}>5</button>
+          <button onClick={() => handleButtonClick('6')}>6</button>
+          <button onClick={() => handleButtonClick('*')}>*</button>
+          <button onClick={() => handleButtonClick('1')}>1</button>
+          <button onClick={() => handleButtonClick('2')}>2</button>
+          <button onClick={() => handleButtonClick('3')}>3</button>
+          <button onClick={() => handleButtonClick('-')}>-</button>
+          <button onClick={() => handleButtonClick('0')}>0</button>
+          <button onClick={() => handleButtonClick('.')}>.</button>
+          <button onClick={() => handleButtonClick('=')}>=</button>
+          <button onClick={() => handleButtonClick('+')}>+</button>
+          <button onClick={() => handleButtonClick('C')}>C</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+
+----------------------app.css
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .calculator input[type="text"] {
+    width: calc(100% - 40px);
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+  
+  .buttons button {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buttons button:hover {
+    background-color: #f0f0f0;
+  }
+/* 5)Start the development server by running:
+npm start */
+  
