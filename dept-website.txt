@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GECA Overview</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0066cc; 
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #topLink {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0066cc; 
+            color: #ffffff; 
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: none;
+            cursor: pointer;
+        }
+
+        #topLink:hover {
+            background-color: #004080;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>GECA</h1>
+    </header>
+
+    <main>
+        <p>Welcome to the GECA department overview!
+        
+        </p>
+        <p>
+            Information Technology Discipline was started in 2000-01 in the Government Engineering College. Department of Information Technology got established from academic year 2002-03. Starting aim was to implement the UG programme in Information Technology with intake capacity of 60. Goals in the nearest future: - Establishing the department as individual independent entity - Setting up of modernized laboratories - Development of departmental library - Enhancing testing facilities - Strengthening industry institute relations through interaction - Motivating the faculty for higher education.
+            this is it department 
+            </p>
+            
+        <p>
+            Engineering Mathematics is taught at first and second year of B.E. degree course as well as for M.E. and MCA courses. The subject is aimed at improving the basic mathematical skills of Engineering students. The topics introduced will serve as basic tools for specialized studies in many Engineering fields. Also Discrete Mathematics is taught to the Computer Science & Engineering, MCA and I.T. students. Department has a well equipped Computer Lab. With essential software like Maple which is helpful for the students in the completion of their research projects. 
+            </p>
+        <a href="other_page.html">
+            <img src="E:\cpl 2 lab\download.jpg" alt="GECA Image">
+        </a>
+        <p>For more details, visit our <a href="index.html">other page</a>.</p>
+    </main>
+
+    <a href="#top" id="topLink">Back to Top</a>
+
+    <script>
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 10) {
+                document.getElementById("topLink").style.display = "block";
+            } else {
+                document.getElementById("topLink").style.display = "block";
+            }
+        }
+
+        document.getElementById("topLink").addEventListener("click", function () {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+    </script>
+
+</body>
+
+</html>

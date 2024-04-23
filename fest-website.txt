@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Festival</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Technical Festival</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>Welcome to Our Technical Festival!</h2>
+      <p>Join us for a celebration of technology and innovation.</p>
+      <button>Register Now</button>
+    </section>
+    <section>
+      <h2>Featured Events</h2>
+      <div class="event">
+        <img src="event1.jpg" alt="Event 1">
+        <h3>Event 1</h3>
+        <p>Description of Event 1</p>
+      </div>
+      <div class="event">
+        <img src="event2.jpg" alt="Event 2">
+        <h3>Event 2</h3>
+        <p>Description of Event 2</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy;Technical Festival</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+-----------css---------------
+  
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd700; /* Change to your preferred hover color */
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.event {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.event:hover {
+  transform: translateY(-5px); /* Add a slight hover effect */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+      font-size: 1.5em;
+  }
+}
+
+  
+
+
+  --------js---------------
+  document.addEventListener('DOMContentLoaded', function() {
+    var registerButton = document.querySelector('button');
+    registerButton.addEventListener('click', function() {
+      alert('Thank you for registering!');
+    });
+  });
+  
