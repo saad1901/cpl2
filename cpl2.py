@@ -7,7 +7,7 @@ def read_file_content(file_path):
     return content
 
 # Define the folder from which you want to display files
-folder_path = "./cpl2"  # Update with your folder name
+folder_path = "./cns"  # Update with your folder name
 
 # Get list of valid file extensions
 valid_extensions = ('txt', 'py', 'cpp', 'java', 'json', 'js', 'html', 'css', 'bat', 'c', 'kt')
