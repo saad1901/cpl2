@@ -1,4 +1,3 @@
-//Extended Euclid
 #include <iostream>
 using namespace std;
 int main(){

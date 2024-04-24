@@ -1,4 +1,3 @@
-//Euclid's Algorithm
 #include <iostream>
 using namespace std;
 
