@@ -81,7 +81,7 @@
             Engineering Mathematics is taught at first and second year of B.E. degree course as well as for M.E. and MCA courses. The subject is aimed at improving the basic mathematical skills of Engineering students. The topics introduced will serve as basic tools for specialized studies in many Engineering fields. Also Discrete Mathematics is taught to the Computer Science & Engineering, MCA and I.T. students. Department has a well equipped Computer Lab. With essential software like Maple which is helpful for the students in the completion of their research projects. 
             </p>
         <a href="other_page.html">
-            <img src="E:\cpl 2 lab\download.jpg" alt="GECA Image">
+            <img src="download.jpg" alt="GECA Image">
         </a>
         <p>For more details, visit our <a href="index.html">other page</a>.</p>
     </main>
