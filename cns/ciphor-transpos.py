@@ -1,6 +1,6 @@
 #Transposition Ciphor
-# key = input("enter key : ")
-key = 'geca'
+key = input("enter key : ")
+# key = 'geca'
 key = key.upper()
 # msgx = input("Enter msg : ")
 with open('input-transpos.txt', 'r') as file:
