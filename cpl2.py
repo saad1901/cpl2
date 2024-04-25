@@ -26,7 +26,8 @@ if selected_file:
         st.code(content, language='python')
     else:
         st.info(".")
-        st.text_area('Enter Your Code here')
-        st.button('Run')
+        
 else:
     st.text(".")
+    st.text_area('Enter Your Code here')
+    st.button('Run')
