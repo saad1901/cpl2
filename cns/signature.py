@@ -3,7 +3,6 @@ from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.asymmetric import padding
 from cryptography.hazmat.primitives.asymmetric import rsa
 
-# Generating a private-public key pair
 private_key = rsa.generate_private_key(
     public_exponent=65537,
     key_size=2048,
@@ -11,7 +10,6 @@ private_key = rsa.generate_private_key(
 )
 public_key = private_key.public_key()
 
-# Function to sign a message
 def sign_message(private_key, message):
     signature = private_key.sign(
         message,
@@ -23,7 +21,6 @@ def sign_message(private_key, message):
     )
     return signature
 
-# Function to verify a signature
 def verify_signature(public_key, signature, message):
     try:
         public_key.verify(
@@ -40,7 +37,7 @@ def verify_signature(public_key, signature, message):
         print("Verification failed:", e)
         return False
 
-# Example usage:
+
 message = b"Hello, world!"
 signature = sign_message(private_key, message)
 print("Signature:", signature)
