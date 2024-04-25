@@ -30,4 +30,7 @@ if selected_file:
 else:
     st.text(".")
     st.text_area('Enter Your Code here')
-    st.button('Run')
+    but = st.button('Compile')
+    if but:
+        st.error('Modules Not Found')
+
